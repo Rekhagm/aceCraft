@@ -27,7 +27,7 @@ export class LoginComponent implements OnInit {
     if (this.loginForm.invalid) {
       return ;
   }
-  }
+}
   constructor(private formBuilder: FormBuilder) { }
 
   ngOnInit(): void {
