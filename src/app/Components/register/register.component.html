@@ -1,0 +1,45 @@
+<div class="mt-5">
+    <div class="col-md-12 min-vh-100 d-flex flex-column">
+                    <div class="login-form">
+                        <form class="mt-5" [formGroup]="registerForm" (ngSubmit)="submitHandler()">
+                            <h2 class="text-center secondary ms-mb-m main-heading ng-binding">Signup with Acecraft</h2>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="Studentfirstname" formControlName="Studentfirstname" placeholder="Student First Name">
+                                <label class="error ng-binding" *ngIf="submitted && f['Studentfirstname'].invalid">Required field</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="studentlastname" formControlName="studentlastname" placeholder="Student Last Name">
+                                <label class="error ng-binding" *ngIf="submitted && f['studentlastname'].invalid">Required field</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="email" formControlName="email" placeholder="Email">
+                                <label class="error ng-binding" *ngIf="submitted && f['email'].invalid">Required field</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="password" formControlName="password" placeholder="Password">
+                                <label class="error ng-binding" *ngIf="submitted && f['password'].invalid">Required field</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="confirmpassword" formControlName="confirmpassword" placeholder="Confirm Password">
+                                <label class="error ng-binding" *ngIf="submitted && f['confirmpassword'].invalid">Required field</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" name="parentname" formControlName="parentname" placeholder="Parent Name">
+                                <label class="error ng-binding" *ngIf="submitted && f['parentname'].invalid">Required field</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control"  name="admissionnumber" formControlName="admissionnumber" placeholder="Admission Number">
+                                <label class="error ng-binding" *ngIf="submitted && f['admissionnumber'].invalid">Required field</label>
+                            </div>
+                            <button type="submit" class="btn btn-dark">Register</button>
+                            <div class="text-center ms-mt-x ms-mb-m register-already-account" style="padding-top:30px">
+                                <span class="ms-fs-12 ng-binding">Already have an account?
+                                    <a class="secondary ng-binding" href="/user/login">
+                                        Login!
+                                    </a>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+    </div>
+    </div>

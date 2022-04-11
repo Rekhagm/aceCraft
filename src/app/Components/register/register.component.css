@@ -1,0 +1,123 @@
+body {
+    color: #999;
+    background: white;
+    font-family: 'Varela Round', sans-serif;
+}
+    
+   .ng-touched{
+        border-color: coral;
+    }
+
+    .error {
+        color: #d8000c;
+    }
+
+.form-control {
+    box-shadow: none;
+    border-color: #ddd;
+}
+
+    .form-control:focus {
+        border-color: #978f8f;
+    }
+
+.login-form {
+    width: 350px;
+    margin: 0 auto;
+}
+
+    .login-form form {
+        color: #978f8f;
+        border-radius: 1px;
+        margin-bottom: 15px;
+        background: #fff;
+        border: 1px solid #f3f3f3;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+        padding: 30px;
+        height:auto;
+        width:400px;
+    }
+
+    .login-form h4 {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+
+    .login-form .avatar {
+        color: #fff;
+        margin: 0 auto 30px;
+        text-align: center;
+        width: 100px;
+        height: 300px;
+        border-radius: 50%;
+        z-index: 9;
+        background: black;
+        padding:8px;
+        box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+    }
+
+        .login-form .avatar i {
+            font-size: 62px;
+        }
+
+    .login-form .form-group {
+        margin-bottom: 15px;
+    }
+
+    .login-form .form-control, .login-form .btn {
+        min-height: 40px;
+        border-radius: 2px;
+        transition: all 0.5s;
+    }
+
+    .login-form .close {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+    }
+
+    .login-form .btn {
+        background: black;
+        border: none;
+        line-height: normal;
+        width: 340px;
+    }
+
+        .login-form .btn:hover, .login-form .btn:focus {
+            background: black;
+        }
+
+    .login-form .checkbox-inline {
+        float: left;
+    }
+
+    .login-form input[type="checkbox"] {
+        margin-top: 2px;
+    }
+
+    .login-form .forgot-link {
+        float: right;
+    }
+
+    .login-form .small {
+        font-size: 13px;
+    }
+
+    .login-form a {
+        color: #978f8f;
+    }
+
+.btn btn-primary {
+    background-color: #978f8f;
+    max-width: 100%;
+}
+.secondary {
+    color: #978f8f;
+}
+
+a:link { text-decoration: none; }
+a:visited { text-decoration: none; }
+a:hover { text-decoration: underline; }
+a:active { text-decoration: underline; }
+
