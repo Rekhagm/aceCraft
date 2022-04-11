@@ -7,13 +7,14 @@
                                 <h2 class="text-center secondary ms-mb-m main-heading ng-binding">Login with Acecraft</h2>
                                 <div class="mt-5">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" name="username" formControlName="username" placeholder="Username">
-                                    <span class="error ng-binding"  *ngIf="submitted && f['username'].invalid">
-                                        <label>Enter valid email</label></span>
+                                    <input type="text" class="form-control" name="email" formControlName="email" placeholder="Username">
+                                    <label class="error ng-binding" *ngIf="submitted && f['email'].errors?.['required']">Email is required</label>
+                                    <label class="error ng-binding" *ngIf="submitted && f['email'].errors?.['email']">Email must be a valid email address</label>
                                 </div>
                                 <div class="form-group">
                                     <input type="password" class="form-control" name="password" formControlName="password" placeholder="Password">
-                                    <label class="error ng-binding" *ngIf="submitted && f['password'].invalid">Required field</label>
+                                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Password is required</label>
+                                    <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">Password must be at least 6 characters</label>
                                 </div>
                                 <button type="submit" class="btn btn-dark">Login</button>
                                 
