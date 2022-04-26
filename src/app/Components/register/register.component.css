@@ -1,25 +1,30 @@
+.ng-valid[required], .ng-valid[required]{
+    border-left: 10px solid #42A948;
+    }
+    
+    .ng-invalid:not(form){
+        border-left: 10px solid #a94442;
+    }
+    
+    .ng-touched{
+        border-color: green;
+    }
+
+    .ng-touched{
+        border-color: green;
+    }
+
 body {
     color: #999;
     background: white;
     font-family: 'Varela Round', sans-serif;
 }
     
-   .ng-touched{
-        border-color: coral;
-    }
 
     .error {
         color: #d8000c;
     }
 
-.form-control {
-    box-shadow: none;
-    border-color: #ddd;
-}
-
-    .form-control:focus {
-        border-color: #978f8f;
-    }
 
 .login-form {
     width: 350px;

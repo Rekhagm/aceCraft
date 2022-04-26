@@ -4,7 +4,7 @@ import { ForgotpasswordComponent } from './Components/forgotpassword/forgotpassw
 
 const routes: Routes = [
   {path:'',redirectTo:'./Home',pathMatch:'full'},
-  {path:'',component:ForgotpasswordComponent},
+  {path:'forgotten',component:ForgotpasswordComponent},
  
 ];
 

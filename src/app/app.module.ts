@@ -9,18 +9,22 @@ import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './Components/register/register.component';
 import { ForgotpasswordComponent } from './Components/forgotpassword/forgotpassword.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
-    ForgotpasswordComponent
-  ],
+    ForgotpasswordComponent,
+
+
+      ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
